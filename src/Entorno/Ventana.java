@@ -1,5 +1,8 @@
 package Entorno;
 
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
 public class Ventana extends JFrame{
@@ -13,11 +16,12 @@ public class Ventana extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setTitle("Sistema Para Ferretería");
 		setSize(Alto , Ancho);
+		System.out.println("Haz creado una Ventana de altura "+Alto+" Y de anchura "+Ancho);
 		setVisible(true);
         setLocationRelativeTo(null);
         setResizable(false);
-        System.out.println("Haz creado una Ventana de altura "+Alto+" Y de anchura "+Ancho);
-		
+        CargarImagen Icono = new CargarImagen("/Recursos/MartilloPorra.png", 100, 100);
+        setIconImage(Icono.getImagen());   
 	}
 
 }
