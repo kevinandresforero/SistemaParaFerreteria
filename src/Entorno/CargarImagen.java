@@ -14,8 +14,14 @@ public class CargarImagen {
         this.posX = posX;
         this.posY = posY;
         this.ubicacionImagen = ubicacionImagen;
-        ImageIcon img = new ImageIcon(this.getClass().getResource(this.ubicacionImagen));
-        this.imagen = img.getImage();
+        try {
+        	ImageIcon img = new ImageIcon(this.getClass().getResource(this.ubicacionImagen));
+        	this.imagen = img.getImage();
+        	System.out.println("se pudo cargar correctamente la imagen de la ruta "+this.ubicacionImagen);
+		} catch (Exception e) {
+			System.out.println("No se pudo cargar correctamente la imagen de la ruta "+this.ubicacionImagen);
+		}
+        	
     }
 
     public Image getImagen() {

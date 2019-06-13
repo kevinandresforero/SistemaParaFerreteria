@@ -1,15 +1,10 @@
 package Entorno;
 
-import java.awt.Image;
-
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-public class Ventana extends JFrame{
+public class Ventana extends JFrame{	
 	
-	
-	
-	int Alto = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width; ; 
+	int Alto = java.awt.Toolkit.getDefaultToolkit().getScreenSize().width;
 	int Ancho = java.awt.Toolkit.getDefaultToolkit().getScreenSize().height;
 	
 	public Ventana(){
@@ -21,8 +16,7 @@ public class Ventana extends JFrame{
         setLocationRelativeTo(null);
         setResizable(false);
         CargarImagen Icono = new CargarImagen("/Recursos/MartilloPorra.png", 100, 100);
-        setIconImage(Icono.getImagen());   
+        setIconImage(Icono.getImagen());
 	}
 
 }
-
