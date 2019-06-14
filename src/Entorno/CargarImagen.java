@@ -10,9 +10,7 @@ public class CargarImagen {
     int posX,posY;
     Image imagen; 
     String ubicacionImagen;
-    public CargarImagen(String ubicacionImagen, int posX,int posY){
-        this.posX = posX;
-        this.posY = posY;
+    public CargarImagen(String ubicacionImagen){
         this.ubicacionImagen = ubicacionImagen;
         try {
         	ImageIcon img = new ImageIcon(this.getClass().getResource(this.ubicacionImagen));
@@ -28,13 +26,6 @@ public class CargarImagen {
         return imagen;
     }
 
-    public int getPosX() {
-        return posX;
-    }
-
-    public int getPosY() {
-        return posY;
-    }
 
     public void setImagen(String ubicacionImagen) {
         this.ubicacionImagen = ubicacionImagen;
