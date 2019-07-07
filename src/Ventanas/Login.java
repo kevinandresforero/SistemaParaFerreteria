@@ -16,14 +16,20 @@
  */
 package Ventanas;
 
-import javax.swing.JPanel;
+import ferreteria.Interfaz.Ventana;
 
 /**
  *
  * @author Kevin Guaitero <https://github.com/kevinandresforero>
  */
-public class Login extends JPanel{
+public class Login extends Ventana{
+    String Usuario[];
+    
     public Login(){
+        
+    }
+
+    private void Identificar() {
         
     }
 }

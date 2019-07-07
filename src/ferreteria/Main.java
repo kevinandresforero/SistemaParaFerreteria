@@ -16,7 +16,7 @@
  */
 package ferreteria;
 
-import ferreteria.Interfaz.Ventana;
+import Ventanas.EstadoVentana;
 
 /**
  *
@@ -24,7 +24,7 @@ import ferreteria.Interfaz.Ventana;
  */
 public class Main {
     public static void main(String[] args) {
-        Ventana v = new Ventana();
+        EstadoVentana e = new EstadoVentana();
     }
     
 }

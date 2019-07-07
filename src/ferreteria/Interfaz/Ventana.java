@@ -39,7 +39,7 @@ public class Ventana extends JFrame{
         setVisible(true);
         setLocationRelativeTo(null);
         setResizable(false);
-        CargarImagen Icono = new CargarImagen("/Recursos/Administrador.jpg");
+        CargarImagen Icono = new CargarImagen("/Recursos/Tienda.jpg");
         setIconImage(Icono.getImagen());
         add(new Fondo());
         setVisible(true);

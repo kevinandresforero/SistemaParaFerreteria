@@ -14,28 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package ferreteria.Interfaz;
-
-import java.awt.Dimension;
-import java.awt.Graphics;
-import javax.swing.JPanel;
+package Ventanas;
 
 /**
  *
  * @author Kevin Guaitero <https://github.com/kevinandresforero>
  */
-public class Fondo extends JPanel {
-    String ruta = "/Recursos/Ferreteria.jpg" ;
-    CargarImagen Fondo = new CargarImagen(ruta);
-    Dimension tam = getSize() ;
-    @Override
-    public void paintComponent(Graphics g){
-        try{
-            g.drawImage(Fondo.getImagen(), 0, 0, new TamañoPantalla().getAlto(), new TamañoPantalla().getAncho(), null);
-            System.out.println("Se pudo Poner el fondo de la ruta: "+ruta);
-        }catch(Exception e){
-            System.out.println("No se pudo Poner el fondo de la ruta: "+ruta);
+public class EstadoVentana {
+    boolean EstadoLogin;
+    public EstadoVentana() {
+        EstadoLogin = false;
+        Validar();
+   }
+
+    private void Validar() {
+        if(EstadoLogin==false){
+            Login login = new Login();
+        }else{
+            
         }
-        
     }
+    
+    
 }

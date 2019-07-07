@@ -19,9 +19,9 @@ public class Fondo extends JPanel{
 	
 	private String ValidarEstado(int EstadoPanel){
 		if(EstadoPanel == 1) {
-			Fondo="/Recursos/Conraseña.jpg";
+			Fondo="/Recursos/Ferreteria.jpg";
 		}else {
-			Fondo="/Recursos/Contraseña2.jpg";
+			Fondo="/Recursos/Ferreteria.jpg";
 		}
 		return Fondo;
 	}

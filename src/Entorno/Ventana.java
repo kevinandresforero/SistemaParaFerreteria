@@ -19,9 +19,9 @@ public class Ventana extends JFrame{
 		setSize(Alto , Ancho);
 		System.out.println("Haz creado una Ventana de altura "+Alto+" Y de anchura "+Ancho);
 		setVisible(true);
-        setLocationRelativeTo(null);
-        setResizable(false);
-        CargarImagen Icono = new CargarImagen("/Recursos/MartilloPorra.png");
-        setIconImage(Icono.getImagen());
+                setLocationRelativeTo(null);
+                setResizable(false);
+                CargarImagen Icono = new CargarImagen("/Recursos/MartilloPorra.png");
+                setIconImage(Icono.getImagen());
 	}
 }
